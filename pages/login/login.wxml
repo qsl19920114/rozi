@@ -1,0 +1,18 @@
+<view class="login-container">
+  <view class="title">NKU Wiki</view>
+  
+  <!-- 微信登录按钮 -->
+  <button class="wx-login-btn" bindtap="handleWxLogin">
+    <image src="/assets/icons/wechat.png" mode="aspectFit" class="wx-icon"></image>
+    微信一键登录
+  </button>
+
+  <!-- 微信头像获取按钮，仅在微信登录时显示 -->
+  <button 
+    wx:if="{{showAvatarButton}}"
+    open-type="chooseAvatar"
+    bind:chooseavatar="onChooseAvatar"
+    class="avatar-button">
+    使用微信头像
+  </button>
+</view> 

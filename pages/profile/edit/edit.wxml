@@ -1,0 +1,66 @@
+<!--pages/profile/edit/edit.wxml-->
+<view class="edit-container">
+  <view class="edit-form">
+    <!-- 头像编辑 -->
+    <view class="form-item">
+      <text class="item-label">头像</text>
+      <!-- 微信登录用户 -->
+      <button 
+        wx:if="{{userInfo.loginType === 'wechat'}}"
+        class="avatar-wrapper" 
+        open-type="chooseAvatar" 
+        bind:chooseavatar="onChooseAvatar"
+      >
+        <image 
+          class="avatar" 
+          src="{{userInfo.avatarUrl || '/assets/icons/default-avatar.png'}}" 
+          mode="aspectFill"
+          binderror="onAvatarError"
+        ></image>
+        <view class="change-button">点击更换</view>
+      </button>
+
+      <!-- 邮箱登录用户 -->
+      <button 
+        wx:else
+        class="avatar-wrapper" 
+        bindtap="onChooseImage"
+      >
+        <image 
+          class="avatar" 
+          src="{{userInfo.avatarUrl || '/assets/icons/email-avatar.png'}}" 
+          mode="aspectFill"
+          binderror="onAvatarError"
+        ></image>
+        <view class="change-button">点击更换</view>
+      </button>
+    </view>
+
+    <!-- 昵称编辑 -->
+    <view class="form-item">
+      <text class="item-label">昵称</text>
+      <input 
+        class="input" 
+        type="text"
+        value="{{newNickName}}"
+        placeholder="请输入昵称" 
+        bindinput="onInputNickName"
+      />
+    </view>
+
+    <!-- 个性签名编辑 -->
+    <view class="form-item">
+      <text class="item-label">个性签名</text>
+      <textarea 
+        class="textarea" 
+        value="{{newStatus}}"
+        placeholder="介绍一下自己吧" 
+        bindinput="onInputStatus"
+        maxlength="50"
+      ></textarea>
+    </view>
+
+    <!-- 保存按钮 -->
+    <button class="save-btn" bindtap="saveChanges">保存</button>
+  </view>
+</view>

@@ -1,0 +1,104 @@
+.login-container {
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 48rpx;
+  font-weight: bold;
+  margin-bottom: 100rpx;
+  color: #333;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 88rpx;
+  background: #F5F5F5;
+  border-radius: 44rpx;
+  padding: 0 30rpx;
+  margin-bottom: 20rpx;
+  box-sizing: border-box;
+}
+
+.code-input {
+  display: flex;
+  gap: 20rpx;
+}
+
+.code-input .input {
+  flex: 1;
+}
+
+.send-btn {
+  width: 200rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #4B6EFF;
+  color: white;
+  border-radius: 44rpx;
+  font-size: 28rpx;
+  padding: 0;
+}
+
+.send-btn.disabled {
+  background: #ccc;
+}
+
+.login-btn {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #4B6EFF;
+  color: white;
+  border-radius: 44rpx;
+  margin-top: 40rpx;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 60rpx 0;
+}
+
+.line {
+  flex: 1;
+  height: 1px;
+  background: #E5E5E5;
+}
+
+.divider text {
+  color: #999;
+  padding: 0 20rpx;
+}
+
+.wx-login-btn {
+  width: 100%;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #07C160;
+  color: white;
+  border-radius: 44rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60rpx;
+}
+
+.wx-icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.avatar-button {
+  margin-top: 40rpx;
+  background-color: #f8f8f8;
+  color: #333;
+} 

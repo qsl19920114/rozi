@@ -1,0 +1,99 @@
+<!-- 顶部搜索框 -->
+<view class="search-box">
+  <image class="icon-search" src="/assets/icons/search/search.png" />
+  <input placeholder="搜索关于南开的一切，或者贡献您的资料" />
+  <image class="icon-voice" src="/assets/icons/search/voice.png" />
+</view>
+
+<!-- 分类导航 -->
+<view class="category-nav">
+  <view class="category-item">
+    <image class="category-icon" src="/assets/icons/search/website.png" />
+    <text>网站</text>
+  </view>
+  <view class="category-item">
+    <image class="category-icon" src="/assets/icons/search/wechat.png" />
+    <text>微信</text>
+  </view>
+  <view class="category-item">
+    <image class="category-icon" src="/assets/icons/search/market.png" />
+    <text>集市</text>
+  </view>
+  <view class="category-item">
+    <image class="category-icon" src="/assets/icons/search/douyin.png" />
+    <text>抖音</text>
+  </view>
+</view>
+
+<!-- 贡献提示 -->
+<view class="contribution-banner">
+  <image class="contribution-icon" src="/assets/icons/search/edit.png" />
+  <text>今日您已贡献了10条知识，获取1000token!</text>
+</view>
+
+<!-- 为您推荐 -->
+<view class="section">
+  <text class="section-title">为您推荐</text>
+  <view class="recommend-grid">
+    <view class="recommend-item">
+      <image class="recommend-icon" src="/assets/icons/search/footprint.png" />
+      <view class="recommend-content">
+        <text class="recommend-title">校园跑步打卡活动规则？</text>
+        <text class="recommend-count">756 人提问</text>
+      </view>
+    </view>
+    <view class="recommend-item">
+      <image class="recommend-icon" src="/assets/icons/search/group.png" />
+      <view class="recommend-content">
+        <text class="recommend-title">如何加入校园社团？</text>
+        <text class="recommend-count">543 人提问</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- wiki今日南开热点 -->
+<view class="section">
+  <view class="section-header">
+    <text class="section-title">wiki今日南开热点</text>
+    <image class="refresh-icon" src="/assets/icons/search/refresh.png" />
+  </view>
+  <view class="news-list">
+    <view class="news-item">
+      <text class="news-title">科研突破：化学学院在《自然》发表新型纳米材料研究，相关成果获央视报道。</text>
+      <text class="news-tag">#南开纳米新材料</text>
+    </view>
+    <view class="news-item">
+      <text class="news-title">招生争议：知乎热帖讨论"强基计划面试公平性"，校方官微两小时内回应称"全程录像可复核"。</text>
+      <text class="news-tag">#强基计划面试公平性</text>
+    </view>
+  </view>
+</view>
+
+<!-- 校园热榜 -->
+<view class="section">
+  <view class="section-header">
+    <text class="section-title">校园热榜</text>
+    <text class="view-more">查看更多</text>
+  </view>
+  <view class="hot-list">
+    <view class="hot-item">
+      <text class="hot-rank">1</text>
+      <text class="hot-title">期末考试时间调整通知：12月20日起陆续开始</text>
+      <text class="hot-count">2.8万讨论</text>
+      <text class="hot-tag">热</text>
+    </view>
+    <view class="hot-item">
+      <text class="hot-rank">2</text>
+      <text class="hot-title">新图书馆开放时间延长至晚上11点</text>
+      <text class="hot-count">1.5万讨论</text>
+      <text class="hot-tag">热</text>
+    </view>
+    <view class="hot-item">
+      <text class="hot-rank">3</text>
+      <text class="hot-title">校园跑步打卡活动正式启动</text>
+      <text class="hot-count">9,826讨论</text>
+      <text class="hot-tag">热</text>
+    </view>
+  </view>
+</view>

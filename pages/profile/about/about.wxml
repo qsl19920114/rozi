@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="about-card">
+    <!-- 头部信息 -->
+    <view class="header">
+      <text class="app-name">应用名称</text>
+      <text class="version">版本 1.0.0</text>
+    </view>
+
+    <!-- 基本信息列表 -->
+    <view class="info-list">
+      <view class="info-item">
+        <text class="label">公司名称</text>
+        <text class="content">{{companyName}}</text>
+      </view>
+
+      <view class="info-item">
+        <text class="label">联系地址</text>
+        <text class="content">{{address}}</text>
+      </view>
+
+      <view class="info-item">
+        <text class="label">联系邮箱</text>
+        <text class="content">{{email}}</text>
+      </view>
+    </view>
+
+    <!-- 版权信息 -->
+    <view class="copyright">
+      <text>Copyright © {{currentYear}} {{companyName}}</text>
+      <text>All Rights Reserved</text>
+    </view>
+  </view>
+</view> 
